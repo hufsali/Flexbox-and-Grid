@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style  type="text/css">
+ul{
+    padding:0;
+    /*space in start of the table*/
+    margin: 5rem auto;
+    /* leaves margin from the top*/
+    list-style-type:none;
+    /* doesnt allow list numberings,dots,alphas with th LIs*/
+border:7px dotted #9b2226;
+/* it is related to the border around the table*/
+display:flex;
+flex-flow:row-wrap;
+justify-content: center;
+align-items:center ;
+align-content: space-evenly;
+/* All changes can be done in parent
+in child we can only change the order*/
+}
+li{
+    border:2px solid #001219;
+    background-color: #ee9800;
+    height: 100px;
+    order:1;
+  width:30%;
+    flex-grow: 2%;
+}
+.flex2{
+    order:2;
+    flex-basis: 25%;
+    /*
+    .row{
+        display:flex ;
+        flex-flow:row wrap;
+        justify-content:center;
+        gap:1%;
+    }
+    .col-1 {
+        flex-basis: 24%;
+        (desktop)
+        flex-basis:48%: 
+        (tablet)
+        flex-basis:98%;
+        (mobile)
+    }
+    (re arrange columns)
+    .col-push-1{
+        order:2;
+    }
+.col-push-3{
+    order:1;
+}
+    */
+   
+
+}
+       </style>
+    </head>
+    <body>
+        <ul>
+            <li>1</li>
+            <li class="flex2"> 2 how are you and what are you doing are you ok?</li>
+            <li>3</li>
+            <li>4 I am all ok and what about you and your children.</li>
+            <li class="flex2">5</li>
+            <li>6</li>
+        </ul>
+    </body>
+</html>
