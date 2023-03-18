@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>A named File</title>
+    <style>
+      h1 {
+        color: red;
+        margin-left: 300px;
+      }
+      .body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        background-color: aqua;
+        width: 720px;
+        margin: 45px auto 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:120px 60px 100px 400px 50px;
+        grid-gap: 5px;
+      }
+      .header {
+        background-color: #e07171;
+        grid-area: 1/1/2/4;
+      
+    
+      }
+      .menu {
+        background-color: rgb(176, 35, 75);
+        grid-area: 2/1/3/4;
+      }
+      .box1 {
+        background-color: rgb(113, 217, 146);
+        grid-area: 3/1/4/2;
+      }
+      .box2 {
+        background-color: rgb(214, 131, 214);
+        grid-area: 3/2/4/3;
+      }
+      .sidebar {
+        background-color: hotpink;
+        grid-area: 3/3/5/4;
+      }
+      .content {
+        background-color: goldenrod;
+        grid-area: 4/1/5/3;
+      }
+      .footer {
+        background-color: olivedrab;
+        grid-area:5/1/6/4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>First Page</h1>
+    <div class="container">
+      <div class="items header">Header</div>
+      <div class="items menu">Menu</div>
+      <div class="items box1">Box1</div>
+      <div class="items box2">Box2</div>
+      <div class="items sidebar">Sidebar</div>
+      <div class="items content">Content</div>
+      <div class="items footer">Footer</div>
+    </div>
+  </body>
+</html>
