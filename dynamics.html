@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>dynamic grid</title>
+    <style>
+      h1 {
+        color: red;
+        margin-left: 300px;
+      }
+      .body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        background: rgb(149, 116, 216);
+        width: 80%;
+      
+        margin: 45px auto 0;
+
+        display: grid;
+        grid-template-columns:minmax(150px,300px) 1fr 1fr min-content;
+        grid-template-rows: repeat(2 ,minmax(150px,min-content));
+        grid-gap:5px;
+        
+      }
+      .one {
+        background-color: #e07171;
+        
+      }
+      .two {
+        background-color: rgb(176, 35, 75);
+       
+      }
+      .three {
+        background-color: rgb(113, 217, 146);
+    
+      }
+      .four {
+        background-color: rgb(214, 131, 214);
+       
+      }
+      .five {
+        background-color: hotpink;
+       
+      }
+      .six {
+        background-color: goldenrod;
+        
+      }
+      .seven {
+        background-color: olivedrab;
+        
+      }
+
+      .eight {
+        background-color: rgb(102, 84, 215);
+      
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dynamic Cells</h1>
+    <div class="container">
+      <div class="items one">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fugit. ipsum dolor sit amet.</div>
+      <div class="items two">Two</div>
+      <div class="items three">Three</div>
+      <div class="items four">Four   ipsum dolor sit amet.</div>
+      <div class="items five">Five</div>
+      <div class="items six">Six</div>
+      <div class="items seven">Seven</div>
+      <div class="items eight">Eight</div>
+    </div>
+  </body>
+</html>
