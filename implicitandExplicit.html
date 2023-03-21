@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>implicit and explicit grid</title>
+    <style>
+      h1 {
+        color: red;
+        margin-left: 300px;
+      }
+      .body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        background: rgb(149, 116, 216);
+        width: 700px;
+        height:700px;
+
+        margin: 45px auto 0;
+        display: grid;
+        /* exlicit grids*/
+        grid-template-columns:150px 150px;
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 5px;
+        /*implicit grids*/
+        grid-auto-rows: 50px;
+        /*grid-auto-flow:row;*/
+        /* grid-auto-columns: .5fr;*/
+/*with align(manages vertically)and justify(manages horizontly) items each row and column moves
+along with grid i.e in grid's start or end or whatever.
+        align-items:start;
+      justify-items:start;  end, center,stretch*/
+        /*for container*/
+        /*place-items:start end ;*/
+        /*with justify(horizontally) or align(vertically) content, whole lot moves to the start or end or center of the container*/
+      justify-content:space-evenly;
+      align-content: space-between;
+/*grid-auto-flow:row-dense; is used to fill the unfilled spaces in the container*/
+      }
+      .one {
+        background-color: #e07171;
+      }
+      .two {
+        background-color: rgb(176, 35, 75);
+       /* align-self: end;*/
+        /*only for an individual item*/
+      }
+      .three {
+        background-color: rgb(113, 217, 146);
+        grid-row: span 3;
+      }
+      .four {
+        background-color: rgb(214, 131, 214);
+      }
+      .five {
+        background-color: hotpink;
+      }
+      .six {
+        background-color: goldenrod;
+      }
+      .seven {
+        background-color: olivedrab;
+        grid-column: span 2;
+      }
+
+      .eight {
+        background-color: rgb(102, 84, 215);
+      }
+      .nine {
+        background-color: rgb(143, 217, 118);
+      }
+      .ten {
+        background-color: rgb(66, 10, 114);
+        color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dynamic Cells</h1>
+    <div class="container">
+      <div class="items one">One</div>
+      <div class="items two">Two</div>
+      <div class="items three">Three</div>
+      <div class="items four">Four</div>
+      <div class="items five">Five</div>
+      <div class="items six">Six</div>
+      <div class="items seven">Seven</div>
+      <div class="items eight">Eight</div>
+      <div class="items nine">Nine</div>
+      <div class="items ten">Ten</div>
+    </div>
+  </body>
+</html>
